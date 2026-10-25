@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>3D Love Heart ❤️</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='theju.css') }}">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <main class="container">
+
+        <h1 class="main-title">My Love For You ❤️</h1>
+
+        <p class="subtitle">
+            One heart, twenty languages, endless love.
+        </p>
+
+        <!-- 3D Heart -->
+        <div class="heart-scene">
+
+            <div class="heart">
+
+                <div class="heart-left"></div>
+
+                <div class="heart-right"></div>
+
+                <div class="heart-shine"></div>
+
+            </div>
+
+            <div class="heart-shadow"></div>
+
+        </div>
+
+        <!-- Love Message Card -->
+        <section class="message-box" aria-live="polite">
+
+            <p class="label">LOVE IN DIFFERENT LANGUAGES</p>
+
+            <h2 id="language">English</h2>
+
+            <p id="message">I Love You ❤️</p>
+
+            <p id="counter">1 / 20</p>
+
+            <div class="buttons">
+
+                <button id="previousButton" type="button">
+                    ← Previous
+                </button>
+
+                <button id="nextButton" type="button">
+                    Next Language ❤️
+                </button>
+
+            </div>
+
+        </section>
+
+        <p class="footer">
+            Made with ❤️ just for you
+        </p>
+
+    </main>
+
+    <!-- Connect JavaScript -->
+    <script src="{{ url_for('static', filename='theju.js') }}"></script>
+
+</body>
+
+</html>
